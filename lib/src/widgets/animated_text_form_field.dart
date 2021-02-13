@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:line_icons/line_icons.dart';
 
 enum TextFieldInertiaDirection {
   left,
@@ -299,7 +300,7 @@ class _AnimatedPasswordTextFormFieldState
       width: widget.animatedWidth,
       enabled: widget.enabled,
       labelText: widget.labelText,
-      prefixIcon: Icon(FontAwesomeIcons.lock, size: 20),
+      prefixIcon: Icon(LineIcons.lock, size: 20),
       suffixIcon: GestureDetector(
         onTap: () => setState(() => _obscureText = !_obscureText),
         dragStartBehavior: DragStartBehavior.down,
